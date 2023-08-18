@@ -1,4 +1,5 @@
 from django.db import models
+from categoria import Categoria 
 
 class Livro(models.Model):
     titulo = models.CharField(max_length=255)
@@ -13,6 +14,3 @@ class Livro(models.Model):
     def __str__(self):
         return f"{self.titulo} ({self.quantidade})"
     
-    
-
-
